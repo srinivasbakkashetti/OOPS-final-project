@@ -4,6 +4,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+/**
+ * GUI class representing the main functionality of the online shopping system.
+ */
 public class MainClassGUI extends JFrame {
     private static final long serialVersionUID = 1L;
     private User activeUser;
@@ -11,6 +14,9 @@ public class MainClassGUI extends JFrame {
     private final ShoppingCart shoppingCart;
     private final Catalog productCatalog;
 
+    /**
+     * Constructor initializes the GUI components.
+     */
     public MainClassGUI() {
         super("Online Shopping System");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -24,14 +30,17 @@ public class MainClassGUI extends JFrame {
         setVisible(true);
     }
 
+    /**
+     * Main method to launch the GUI application.
+     * @param args Command line arguments (not used).
+     */
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new MainClassGUI();
-            }
-        });
+        SwingUtilities.invokeLater(MainClassGUI::new);
     }
+
+    /**
+     * Method to create the GUI components.
+     */
 
     private void createNewGUIComponents() {
         JPanel panel = new JPanel(new FlowLayout());

@@ -1,7 +1,12 @@
 package finalproject;
+
 import java.util.Scanner;
 import java.util.List;
 import java.util.regex.Pattern;
+
+/**
+ * The main class of the final project.
+ */
 public class MainClass {
     public static void main(String[] args) {
         Scanner inputScanner = new Scanner(System.in);
@@ -170,7 +175,7 @@ public class MainClass {
         }
     }
 
-// Placeholder method to find a product by name
+    // Placeholder method to find a product by name
     private static Product findProduct(List<Product> productCatalogProducts, String chosenProductName) {
         for (Product product : productCatalogProducts) {
             if (product.getProductName().equalsIgnoreCase(chosenProductName)) {
@@ -180,7 +185,7 @@ public class MainClass {
         return null;
     }
 
-// Placeholder method to calculate the total price of items in the cart
+    // Placeholder method to calculate the total price of items in the cart
     private static double computeTotalCost(ShoppingCart shoppingCart) {
         double total = 0.0;
         for (Product product : shoppingCart.getProductList()) {

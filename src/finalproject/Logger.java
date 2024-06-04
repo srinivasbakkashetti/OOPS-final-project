@@ -1,10 +1,15 @@
 package finalproject;
-// This line declares the package "finalproject" for the current Java file.
+
+/**
+ * A simple logger class for logging messages.
+ */
 public class Logger {
-// Declaration of the Logger class.
+    /**
+     * Logs a message to the console.
+     *
+     * @param message The message to log.
+     */
     public static void log(String message) {
-        // Declaration of a public static method named "log" that takes a parameter of type String.
         System.out.println(message);
-        // Printing the provided message to the console.
     }
 }

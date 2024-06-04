@@ -1,35 +1,54 @@
 package finalproject;
+
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * The Catalog class represents a catalog of products.
+ */
 public class Catalog {
+    // Private field to store the list of products.
     private List<Product> productList = new ArrayList<>();
-    // Declaration of a private field "productList" of type List<Product> initialized with an ArrayList.
+
+    /**
+     * Adds a product to the catalog.
+     *
+     * @param product The product to add.
+     */
     public void addProduct(Product product) {
-        // Declaration of a public method "addProduct" that takes a parameter of type Product.
         productList.add(product);
-        // Adding the provided product to the list of productList.
     }
+
+    /**
+     * Retrieves a product from the catalog by its name.
+     *
+     * @param name The name of the product to retrieve.
+     * @return The product with the specified name, or null if not found.
+     */
     public Product getProductByName(String name) {
-        // Declaration of a public method "getProductByName" that takes a parameter of type String.
         for (Product product : productList) {
-            // Starting a for-each loop to iterate over the productList in the list.
             if (product.getProductName().equals(name)) {
-                // Checking if the name of the current product matches the provided name.
                 return product;
-                // Returning the product if a match is found.
             }
         }
         return null;
-        // Returning null if no matching product is found.
     }
+
+    /**
+     * Retrieves all products in the catalog.
+     *
+     * @return A list containing all products in the catalog.
+     */
     public List<Product> getAllproductList() {
-        // Declaration of a public method "getAllproductList" that returns a List<Product>.
         return productList;
-        // Returning the list of all productList.
     }
-    public void addproductList(List<Product> newproductList) {
-        // Declaration of a public method "addproductList" that takes a parameter of type List<Product>.
-        productList.addAll(newproductList);
-        // Adding all the productList from the provided list to the existing list of productList.
+
+    /**
+     * Adds a list of products to the catalog.
+     *
+     * @param newProductList The list of products to add.
+     */
+    public void addproductList(List<Product> newProductList) {
+        productList.addAll(newProductList);
     }
 }

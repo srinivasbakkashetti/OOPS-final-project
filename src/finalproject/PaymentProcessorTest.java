@@ -1,7 +1,13 @@
 package finalproject;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
+
+/**
+ * Test class for PaymentProcessor.
+ */
 public class PaymentProcessorTest {
+
     @Test
     public void testProcessPaymentSuccess() {
         PaymentProcessor paymentProcessor = new PaymentProcessor();
