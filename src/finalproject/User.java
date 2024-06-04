@@ -1,8 +1,5 @@
 package finalproject;
-
-
 public class User {
-
     private String userName;
     private String password;
     private String name;
@@ -43,15 +40,7 @@ public class User {
         return email;
     }
 
-
     public void setemail(String email) {
         this.email = email;
-
-
     }
-
-
 }
-
-
-

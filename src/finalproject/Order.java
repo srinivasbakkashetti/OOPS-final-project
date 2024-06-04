@@ -1,7 +1,5 @@
 package finalproject;
-
 public class Order {
-
     private User user;
     private ShoppingCart cart;
     private String orderStatus;
@@ -30,11 +28,9 @@ public class Order {
     public User getuser() {
         return user;
     }
-
     public ShoppingCart getcart() {
         return cart;
     }
-
     public String getorderStatus() {
         return orderStatus;
     }

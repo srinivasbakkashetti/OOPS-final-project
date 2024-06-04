@@ -1,12 +1,8 @@
 package finalproject;
-
 import java.util.ArrayList;
 import java.util.List;
-
 public class UserAuthSystem {
-
     private List<User> newUsers;
-
     public UserAuthSystem() {
         this.newUsers = new ArrayList<>();
     }
@@ -16,7 +12,6 @@ public class UserAuthSystem {
             System.out.println("Username is already taken. Please choose a different one.");
             return;
         }
-
         User newUser = new User(userName, newPassword, newName, newEmail);
         newUsers.add(newUser);
         System.out.println("User registered successfully!");
